@@ -21,11 +21,10 @@ jstring Java_top_itdl_jni_NDKTools_getStringFormNDK(JNIEnv *env, jclass type) {
 ```
 
 ### 4、编写 Android.mk 文件
-LOCAL_PATH := $(call my-dir)<br>
-include $(CLEAR_VARS)<br>
-LOCAL_MODULE := jni-test<br>
-LOCAL_SRC_FILES := JniTest.c<br>
-include $(BUILD_SHARED_LIBRARY)<br>
+
+LOCAL_MODULE :生成的.so文件名 <br> 
+LOCAL_SRC_FILES :需要编译的C源码<br>
+
 
 ``` 
 LOCAL_PATH := $(call my-dir)
